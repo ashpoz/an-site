@@ -1,0 +1,218 @@
+
+/* ===Base Styles=== */
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+
+}
+
+body {
+	font-family: 'Univers LT 47 CondensedLt', helvetica;
+	line-height: 1.6;
+	background-image: url("MiseEnPlaceCover.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: 0;
+
+}
+
+p {
+	font-size: .95em
+	margin-bottom: 1.5em;
+	color:#fff;
+}
+h1, 
+h2,
+h3,
+a {
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+
+}
+
+footer {
+
+	position: fixed;
+	left: 0;
+	bottom: -5%;
+	height: 100px;
+	width: 100%;
+	margin: 0;	
+	background-color: #fff;
+
+}
+
+/* ===Fonts=== */
+
+@import url(http://db.onlinewebfonts.com/c/f41fdfb395bffe5e23703886d6c5a0b7?family=Univers+LT+47+CondensedLt);
+
+@font-face {font-family: "Univers LT 47 CondensedLt";
+    src: url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.eot");
+    src: url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/f41fdfb395bffe5e23703886d6c5a0b7.svg#Univers LT 47 CondensedLt") format("svg");
+}
+
+/*=== Base Layout Styles ===*/
+
+
+
+.shows {
+	padding-left: 1em;
+	margin-top: .25em;
+}
+
+
+
+.header {
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 0;
+	z-index: 100;
+}
+
+/*=== Mobile Menu ===*/
+
+.mobile-nav {
+	min-width: 100%;
+	position: fixed;
+	margin-top: -3em;
+}
+.menu-btn  {
+ position: relative;
+ line-height: 0;
+ font-size: 18px;
+ font-weight: 200;
+ z-index: 100;
+ float: right;
+ margin-right: 1em;
+}
+ 
+.menu-btn span {
+ text-align: right;
+ display: block;
+ width: 19px;
+ height: 3px;
+ margin: 4px 0;
+ background: rgb(0,0,0);
+ z-index: 99;
+}
+
+.responsive-menu{
+ display: none;
+ min-width: 100%;
+}
+ 
+.expand {
+ display: block !important; 
+}
+
+.navbar li {
+	display: block;
+}
+
+.navbar ul {
+	text-align: left;
+	background-color: #fff;
+	z-index: 400;
+	margin-top: 30px;
+}
+
+/*
+.navbar li {
+	display: inline-block;
+	min-width: 50px;
+}
+
+.navbar ul {
+	margin-top: 5px;
+	padding: 0;
+	text-align: center;
+}
+
+.navbar a {
+	color: #000;
+	border-bottom-style: dotted;
+	border-width: 2px;
+}
+*/
+
+#bit-widget-0 {
+	padding-top: 8em;
+	padding-right: 0em;
+	padding-left: 0em;
+	position: relative;
+	min-width: 100%;
+	padding-bottom: 8em;
+}
+
+
+
+.socials li {
+	display: inline-block;
+	max-width: 2em;
+	margin-top: 1em;
+}
+
+.socials ul {
+	
+	text-align: center;
+}
+
+/* ===Media Queries=== */
+
+@media (min-width: 768px) {
+
+
+
+#bit-widget-0 {
+	padding-right: 5em;
+	padding-left: 5em;
+	position: relative;
+	min-width: 80%;
+
+}
+
+#menu-btn {
+}
+.navbar li {
+	display: inline-block;
+	min-width: 50px;
+}
+
+.navbar ul {
+	margin-top: 5px;
+	padding: 0;
+	text-align: center;
+}
+
+.navbar a {
+	color: #000;
+	border-bottom-style: dotted;
+	border-width: 2px;
+}
+
+#bit-widget-0 {
+	padding-top: 8em;
+	padding-right: 0em;
+	padding-left: 0em;
+	position: relative;
+	min-width: 100%;
+	padding-bottom: 8em;
+}
+}
