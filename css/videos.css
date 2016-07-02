@@ -49,8 +49,7 @@ footer {
 
 	position: fixed;
 	left: 0;
-	bottom: -5%;
-	height: 100px;
+	bottom: 0;
 	width: 100%;
 	background-color: #fff;
 	margin: 0;
@@ -74,35 +73,74 @@ footer {
 
 .videos {
 	padding-left: 1em;
-	margin-top: .25em;
+	margin-top: .1em;
+	margin-bottom: 0;
 }
-
 
 
 
 .header {
 	position: fixed;
-	height: 100px;
 	width: 100%;
 	background-color: #fff;
-	margin-bottom: 0;
+	margin: 0;
 	z-index: 100;
 }
+
+/*=== Mobile Menu ===*/
+
+.mobile-nav {
+	min-width: 100%;
+	position: fixed;
+	margin-top: -2.4em;
+}
+.menu-btn  {
+ position: relative;
+ line-height: 0;
+ font-size: 18px;
+ font-weight: 200;
+ z-index: 100;
+ float: right;
+ margin-right: 1em;
+}
+ 
+.menu-btn span {
+ text-align: right;
+ display: block;
+ width: 19px;
+ height: 3px;
+ margin: 4px 0;
+ background: rgb(0,0,0);
+ z-index: 99;
+}
+
+.responsive-menu{
+ display: none;
+ overflow: scroll;
+ min-width: 100%;
+}
+ 
+.expand {
+ display: block !important; 
+}
+
 .navbar li {
-	display: inline-block;
-	min-width: 50px;
+	display: block;
+	border-top-style: double;
+	padding: 1em;
+	font-size: 1.1em;
 }
 
 .navbar ul {
-	margin-top: 5px;
-	padding: 0;
 	text-align: center;
+	background-color: #fff;
+	z-index: 400;
+	margin-top: 13px;
+	padding: 0;
 }
 
-.navbar a {
-	color:#000;
-	border-bottom-style: dotted;
-	border-width: 2px;
+li.contact {
+	border-bottom-style: double;
 }
 
 .col {
@@ -114,16 +152,13 @@ footer {
 
 
 .socials li {
-  display: inline-block;
-  text-align: center;
-  max-width: 2em;
-  margin-top: 1em;
-
-
-
+	display: inline-block;
+	max-width: 2em;
+	padding: .3em;
 }
 
 .socials ul {
+	
 	text-align: center;
 }
 
