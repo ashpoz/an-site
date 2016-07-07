@@ -13,11 +13,10 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	margin-bottom: 0;
-	background-image: url("Alex Napping 2016-3.jpg");
-	background-size: 54em;
+	background-image: url("Alex Napping 2016-4.jpg");
+	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 20%;
 
 }
 
@@ -37,8 +36,6 @@ h3 {
 	margin-top: 0;
 }
 
-
-}
 a {
 	text-decoration: none;
 }
@@ -53,8 +50,7 @@ footer {
 
 	position: fixed;
 	left: 0;
-	bottom: -5%;
-	height: 100px;
+	bottom: 0;
 	width: 100%;
 	background-color: #fff;
 	margin: 0;
@@ -76,9 +72,16 @@ footer {
 
 /* ===Base Layout Styles=== */
 
-.contact {
+h3 {
+	text-align: center;
+	padding-top: 15em;
+}
+
+
+.title {
 	padding-left: 1em;
-	margin-top: .25em;
+	margin-top: .1em;
+	margin-bottom: 0;
 }
 
 
@@ -86,27 +89,66 @@ footer {
 
 .header {
 	position: fixed;
-	height: 100px;
 	width: 100%;
 	background-color: #fff;
-	margin-bottom: 0;
+	margin: 0;
 	z-index: 100;
 }
+
+/*=== Mobile Menu ===*/
+
+.mobile-nav {
+	min-width: 100%;
+	position: fixed;
+	margin-top: -2.4em;
+}
+.menu-btn  {
+ position: relative;
+ line-height: 0;
+ font-size: 18px;
+ font-weight: 200;
+ z-index: 100;
+ float: right;
+ margin-right: 1em;
+}
+ 
+.menu-btn span {
+ text-align: right;
+ display: block;
+ width: 19px;
+ height: 3px;
+ margin: 4px 0;
+ background: rgb(0,0,0);
+ z-index: 99;
+}
+
+.responsive-menu{
+ display: none;
+ overflow: scroll;
+ min-width: 100%;
+}
+ 
+.expand {
+ display: block !important; 
+}
+
 .navbar li {
-	display: inline-block;
-	min-width: 50px;
+	display: block;
+	border-top-style: double;
+	padding: 1em;
+	font-size: 1.1em;
 }
 
 .navbar ul {
-	margin-top: 5px;
-	padding: 0;
 	text-align: center;
+	background-color: #fff;
+	z-index: 400;
+	margin-top: 13px;
+	padding: 0;
 }
 
-.navbar a {
-	color:#000;
-	border-bottom-style: dotted;
-	border-width: 2px;
+li.contact {
+	border-bottom-style: double;
 }
 
 .col {
@@ -115,30 +157,23 @@ footer {
 	margin-bottom: 5em;
 }
 
-
-
-.socials li {
-  display: inline-block;
-  text-align: center;
-  max-width: 2em;
-  margin-top: 1em;
-
-
-
-}
-
-.socials ul {
-	text-align: center;
-}
-
 .site-content {
 	position: relative;
 }
 
-h3 {
-	text-align: center;
-	padding-top: 15em;
+
+.socials li {
+	display: inline-block;
+	max-width: 2em;
+	padding: .3em;
 }
+
+.socials ul {
+	
+	text-align: center;
+}
+
+
 
 
 /* ===Media Queries=== */
@@ -146,27 +181,76 @@ h3 {
 @media (min-width: 768px) {
 
 body {
-	background-size: 110%;
-	background-attachment: fixed;
-	background-position: 10% 70%;
+	font-size: 1.2em
 }
 
+a {
+	font-size: 1.2em;
+}
+a:hover {
+	font-size: 1.5em;
+	border-bottom-style: dotted;
+	border-width: 2px;
+
+}
+.navbar li a {
+	color: rgba(23, 23, 23, 0.87);
+}
+.header {
+	background-color: #fff;
+	height: 4em;
+}
 .site-content {
 	text-align: center;
+}
+.content {
+	margin-top: 0;
 }
  .col {
  	display: inline-block;
  	position: relative;
  	padding: 2em;
-
-
-}
-.col-one {
-
 }
 
+.responsive-menu {
+	display: inline;
+}
 
+.mobile-nav {
+	margin-top: 10px;
+	position: absolute;
 
+}
+.navbar li {
+	display: inline-block;
+	min-width: 50px;
+	border-top-style: none;
+	padding: 0;
+	font-size: .95em;
+	color: rgba(87, 233, 255, 0.63);
 
 }
 
+
+li.contact {
+	border-bottom-style: none;
+}
+.navbar ul {
+	background-color: transparent;
+	text-align: right;
+	margin-right: 8%;
+	
+}
+.title {
+	position: absolute;
+}
+
+.navbar a {
+	color: #000;
+	
+}
+#menu-btn {
+	display: none;
+}
+
+}

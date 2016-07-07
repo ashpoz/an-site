@@ -227,9 +227,17 @@ h3 {
 }
 
 .navbar li a {
-	border-width: 2px;
+	border-width: 10px;
 	margin: 1em;
 
+
+}
+
+.navbar a:hover {
+	background-color: #fff;
+	border-color: #fff;
+	border-width: 5px;
+	font-size: 1.4em;
 
 }
 
