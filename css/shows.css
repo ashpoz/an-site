@@ -202,7 +202,7 @@ a:hover {
 }
 
 .responsive-menu {
-	overflow: inherit;
+	display: inline;
 }
 
 .mobile-nav {

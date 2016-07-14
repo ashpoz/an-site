@@ -6,7 +6,7 @@ el.innerHTML = el.innerHTML.replace(/&nbsp;/g,'');
 
 
 
-$(function($){
+jQuery(function($){
     	     $( '.menu-btn' ).click(function(){
     	     $('.responsive-menu').slideToggle('expand')
     	     });

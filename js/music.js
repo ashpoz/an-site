@@ -7,5 +7,12 @@ jQuery(function($){
     	     });
         });
 
+$(window).resize(function() {
+	if (window.innerWidth > 768) {
+		$('.responsive-menu').show();
+	} else {
+		$('.responsive-menu').hide();
+	}
+});
 
 });

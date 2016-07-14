@@ -37,7 +37,7 @@ img {
 
 footer {
 
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: -5%;
 	height: 100px;
@@ -176,15 +176,6 @@ body {
 .navbar li {
 
 	text-align: center;
-
-}
-.socials li {
-
-
-
-}
-
-
 
 }
 
