@@ -13,7 +13,7 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	margin-bottom: 0;
-	background-image: url("MiseEnPlaceCover.jpg");
+	background-color: #98d4e6;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -30,6 +30,9 @@ h2,
 h3,
 a {
 	font-family: 'Univers LT 47 CondensedLt', helvetica;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
 h2,
 h3 {
@@ -73,12 +76,30 @@ footer {
 
 
 
-.shows {
-	padding-left: 1em;
-	margin-top: .1em;
-	margin-bottom: 0;
+.header a {
+	color: #000;
+}
+.logo {
+	display: block;
+	position: relative;
+	z-index: 200;
+}
+.alex {
+	margin-top: .2em;
 }
 
+.napping {
+	margin-top: -23px;
+	padding-left: 10px;
+
+}
+
+.alex, 
+.napping {
+	margin-left: 8%;
+	margin-right: 135px;
+
+}
 
 
 .header {
@@ -129,8 +150,11 @@ footer {
 .navbar li {
 	display: block;
 	border-top-style: double;
+	border-bottom-color: #000;
+	border-top-color: #000;
 	padding: 1em;
 	font-size: 1.1em;
+	color: #fff;
 }
 
 .navbar ul {
@@ -177,15 +201,25 @@ body {
 	font-size: 1.2em
 }
 
+
 a {
 	font-size: 1.2em;
 }
-a:hover {
-	font-size: 1.5em;
+
+.navbar a:hover {
 	border-bottom-style: dotted;
 	border-width: 2px;
 
 }
+.active {
+	border-bottom-style: dotted;
+	border-width: 2px;
+}
+
+.napping {
+    margin-top: -34px;
+    padding-left: 14px;
+ }
 .navbar li a {
 	color: rgba(23, 23, 23, 0.87);
 }
@@ -193,6 +227,8 @@ a:hover {
 	background-color: #fff;
 	height: 4em;
 }
+
+
 
 #bit-widget-0 {
 	padding-right: 5em;
@@ -206,8 +242,9 @@ a:hover {
 }
 
 .mobile-nav {
-	margin-top: 10px;
 	position: absolute;
+	margin-top: -3.3em;
+
 
 }
 .navbar li {
@@ -230,9 +267,6 @@ li.contact {
 	margin-right: 8%;
 	margin-top: 13px;
 	
-}
-.shows {
-	position: absolute;
 }
 
 .navbar a {

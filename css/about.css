@@ -1,3 +1,4 @@
+/* ===Alex Napping About Page=== */
 
 /* ===Base Styles=== */
 
@@ -13,10 +14,11 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	margin-bottom: 0;
-	background-color: #98d4e6;
+	background-image: url("Alex Napping 2016-1.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: 50% 75%;
 
 }
 
@@ -25,18 +27,13 @@ p {
 	margin-bottom: 1.5em;
 	color:#fff;
 }
-h1,
-h2,
-h3,
-a {
-	font-family: 'Univers LT 47 CondensedLt', helvetica;
-	margin-top: 0;
-	margin-bottom: 0;
-}
+
 h2,
 h3 {
 	margin-top: 0;
+	margin-bottom: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -73,15 +70,16 @@ footer {
 
 /* ===Base Layout Styles=== */
 
-
-.header a {
+h2 a {
 	color: #000;
 }
+
 .logo {
 	display: block;
 	position: relative;
 	z-index: 200;
 }
+
 .alex {
 	margin-top: .2em;
 }
@@ -107,7 +105,6 @@ footer {
 	margin: 0;
 	z-index: 100;
 }
-
 
 /*=== Mobile Menu ===*/
 
@@ -154,7 +151,6 @@ footer {
 	padding: 1em;
 	font-size: 1.1em;
 	color: #fff;
-
 }
 
 .navbar ul {
@@ -175,6 +171,9 @@ li.contact {
 	margin-bottom: 5em;
 }
 
+.site-content {
+	position: relative;
+}
 
 
 .socials li {
@@ -188,12 +187,7 @@ li.contact {
 	text-align: center;
 }
 
-.site-content {
-	padding-top: 7em;
-	position: relative;
-	height: 100%;
 
-}
 
 
 /* ===Media Queries=== */
@@ -207,6 +201,7 @@ body {
 a {
 	font-size: 1.2em;
 }
+
 .navbar a:hover {
 	border-bottom-style: dotted;
 	border-width: 2px;
@@ -231,11 +226,13 @@ a {
 .site-content {
 	text-align: center;
 }
+.content {
+	margin-top: 0;
+}
  .col {
  	display: inline-block;
  	position: relative;
  	padding: 2em;
-
 }
 
 .responsive-menu {
@@ -266,18 +263,19 @@ li.contact {
 	text-align: right;
 	margin-right: 8%;
 	margin-top: 13px;
+
 	
+}
+.title {
+	position: absolute;
 }
 
 .navbar a {
 	color: #000;
 	
 }
-#menu-btn {
+#menu-btn span {
 	display: none;
 }
 
-
-
 }
-

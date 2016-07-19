@@ -39,11 +39,11 @@ footer {
 
 	position: fixed;
 	left: 0;
-	bottom: -5%;
-	height: 100px;
+	bottom: 0;
 	width: 100%;
 	background-color: #fff;
 	margin: 0;
+	
 }
 
 /* ===Fonts=== */
@@ -62,7 +62,9 @@ footer {
 /* ===Base Layout Styles=== */
 
 
-
+.main-header a {
+	color: #000;
+}
 
 /* ---Navigation--- */
 
@@ -105,8 +107,8 @@ footer {
 
 .navbar a:hover {
 	background-color: #fff;
-	border-color: #000;
-	border-width: 2px;
+	border-color: #fff;
+	border-width: 10px;
 
 }
 .navbar a {
@@ -208,6 +210,10 @@ h3 {
 	padding-bottom: 0px;
 }
 
+.container ul {
+	background-position: 42em -2em;
+
+}
 .navbar li {
 	text-align: center;
 	display: inline-block;
@@ -227,8 +233,8 @@ h3 {
 .navbar a:hover {
 	background-color: #fff;
 	border-color: #fff;
-	border-width: 5px;
-	font-size: 1.4em;
+	border-width: 10px;
+
 
 }
 
